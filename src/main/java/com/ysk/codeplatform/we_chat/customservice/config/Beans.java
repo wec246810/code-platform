@@ -44,6 +44,7 @@ public class Beans {
         return cacheManager;
     }
 
+    @SuppressWarnings("all")
     @ConditionalOnMissingBean
     @Bean
     public RedisTemplate redisTemplate(RedisConnectionFactory factory) {
